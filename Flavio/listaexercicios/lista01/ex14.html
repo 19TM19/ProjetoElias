@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ex14</title>
+    <style>
+        * {
+    margin:0;
+    padding: 0;
+    box-sizing: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../imagenslista/logozinha.webp");
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: right top;
+}   
+</style>
+    <script language="javascript" type="text/javascript">
+        function valorMaior() {
+            var num1 = parseInt(document.getElementById("n1").value);
+            var num2 = parseInt(document.getElementById("n2").value);
+
+
+            if (num1 > num2) {
+                document.getElementById("resultado").innerHTML = "O primeiro número " + num1 + " é maior.";
+            } else {
+                document.getElementById("resultado").innerHTML = "O segundo número " + num2 + " é maior.";
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>Digite dois números:</p>
+    <input type="text" id="n1" size="5">
+    <input type="text" id="n2" size="5">
+    <input type="button" value="Verificar Maior" onclick="valorMaior()">
+    <br>
+    <p id="resultado"></p>
+    <P Curso: Análise e Desenvolvimento de Sistemas. <br/>
+    Turma: OADSDM1A-RCT002-20241 <br/>
+    Curso: Analise e Desenvolvimento de Sistemas <br/>
+    Aluno: Matheus Benedito. <br/>
+    </p>
+        <form action="ex00.html">
+            <input type="submit" value="Retornar ao menu"/>
+        </form>
+</body>
+</html>

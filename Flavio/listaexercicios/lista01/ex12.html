@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex12</title>
+    <style>
+        * {
+    margin:0;
+    padding: 0;
+    box-sizing: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../imagenslista/logozinha.webp");
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: right top;
+}   
+</style>
+    <script>
+        function vendas() {
+            var carro = parseFloat(document.getElementById("carro").value);
+            var impos = (45 / 100) * carro;
+            var carroI = carro + impos
+            var dist = (28 / 100) * carroI
+            var carroF = carroI + dist
+            var display = document.getElementById("display");
+            var mensagem = "Valor final da venda: " + carroF.toFixed(2);
+            display.innerHTML = mensagem;
+        }
+    </script>   
+</head>
+<body>
+    <p>Digite o valor da fabricação do carro:</p>
+    <input type="text" id="carro" size="5" /><br/>
+    <input type="button" value="Mostrar" onclick="vendas()" />
+    <br/><p id="display"><i>Valor final da venda</i></p>  
+    <P Curso: Análise e Desenvolvimento de Sistemas. <br/>
+    Turma: OADSDM1A-RCT002-20241 <br/>
+    Curso: Analise e Desenvolvimento de Sistemas <br/>
+    Aluno: Matheus Benedito. <br/>
+    </p>
+        <form action="ex00.html">
+            <input type="submit" value="Retornar ao menu"/>
+        </form>
+</body>
+</html>

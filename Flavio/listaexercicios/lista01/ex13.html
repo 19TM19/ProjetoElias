@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex13</title>
+    <style>
+        * {
+    margin:0;
+    padding: 0;
+    box-sizing: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../imagenslista/logozinha.webp");
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: right top;
+}   
+</style>
+    <script language="javascript" type="text/javascript">
+        function mostrarsituacao(){
+            var a = parseInt(document.getElementById("a").value);
+            var display = document.getElementById("display");
+            switch(a){
+                case 1:
+                    display.innerHTML = "1";
+                    break;
+                case 2:
+                    display.innerHTML = "2";
+                    break;
+                case 3:
+                    display.innerHTML = "3";
+                    break;
+                case 4:
+                    display.innerHTML = "4";
+                    break;
+                case 5:
+                    display.innerHTML = "5";
+                    break;
+                case 6:
+                    display.innerHTML = "6";
+                    break;
+                case 7:
+                    display.innerHTML = "7";
+                    break;
+                case 8:
+                    display.innerHTML = "8";
+                    break;
+                case 9:
+                    display.innerHTML = "9";
+                    break;
+                case 10:
+                    display.innerHTML = "10";
+                    break;
+                default:
+                    display.innerHTML = " ATENÇAO: numero nao suportado pelo pc de batata 2.000";
+                    break;
+            }
+        }
+    </script>
+</head>
+<body>
+    digite um numero de 1 a 10:<input type="text" id="a" size="5" />
+    <input type="button" value="Mostrar" onclick="mostrarsituacao()" />
+    <br/><p id="display" ><i>numero</i></p>
+    <P Curso: Análise e Desenvolvimento de Sistemas. <br/>
+    Turma: OADSDM1A-RCT002-20241 <br/>
+    Curso: Analise e Desenvolvimento de Sistemas <br/>
+    Aluno: Matheus Benedito. <br/>
+    </p>
+        <form action="ex00.html">
+            <input type="submit" value="Retornar ao menu"/>
+        </form>
+</body>
+</html>
+
+

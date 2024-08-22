@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex08</title>
+                <input type="number" id="money" placeholder="dinheiro">
+                <input type="number" id="conv" placeholder="taxa de conversão">
+                <select id="conver">
+                    <option value="1">Dolar para Real</option>
+                    <option value="2">Real para Dolar</option>
+                </select> 
+                <button onclick="Dolar()">Calcular</button>
+            <script>
+                function Dolar() {
+var money = parseFloat(document.getElementById("money").value);
+var conv = parseFloat(document.getElementById("conv").value);
+var resultd = money / conv //real para dolar
+var resultr = money * conv //dolar para real
+if(conver.value == "2") {
+    document.write("O valor de R$", money, " em dolar é US$", resultd,)
+} else {
+    document.write("O valor de US$", money, " em real é R$", resultr,)       
+}
+                }
+
+            </script>
+</head>
+<style>
+    * {
+        margin:0;
+        padding: 0;
+        box-sizing: 0;
+    }
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-image: url("../imagenslista/logozinha.webp");
+        background-size: 25%;
+        background-repeat: no-repeat;
+        background-position: right top;
+    }    
+</style>
+<body>
+    <P Curso: Análise e Desenvolvimento de Sistemas. <br/>
+    Turma: OADSDM1A-RCT002-20241 <br/>
+    Curso: Analise e Desenvolvimento de Sistemas <br/>
+    Aluno: Matheus Benedito. <br/>
+    </p>
+        <form action="ex00.html">
+            <input type="submit" value="Retornar ao menu"/>
+        </form> 
+</body>
+</html>

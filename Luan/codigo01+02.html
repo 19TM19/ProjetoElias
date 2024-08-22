@@ -1,0 +1,30 @@
+<body>
+    <hl>Abrir e Fechar Aba</hl>
+    <button onclick="abrirAba()">Abrir Aba</button>
+    <button onclick="fecharAba()">Fechar Aba</button>
+    <h1>setTimeout e clearTimeout</h1>
+    <button id="startTimeout">Iniciar Timeout</button>
+    <button id="cancelTimeout">Cancelar Timeout</button>
+    <p id="message"></p>
+    <script>
+        let minhaAba;
+        function abrirAba() {
+            minhaAba = window.open('https://www.twitch.tv/thematheus19_', '_blank');
+        }
+        function fecharAba() {
+            minhaAba.close();
+        }
+        let timeoutId;
+        const messageElement = document.getElementById('message');
+        document.getElementById('startTimeout').onclick = function() {
+            messageElement.textContent = "Timeout iniciado - aguarde 3 segundos...";
+            timeoutId = setTimeout(() => {
+                messageElement.textContent = "Timeout concluído!";
+            }, 3000);
+        };
+        document.getElementById('cancelTimeout').onclick = function() {
+            clearTimeout(timeoutId);
+            messageElement.textContent = "Timeout cancelado.";
+        };
+    </script>
+</body>

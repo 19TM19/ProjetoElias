@@ -1,0 +1,97 @@
+<html>
+<head>
+    <title>ex22</title>
+    <style>
+        * {
+    margin:0;
+    padding: 0;
+    box-sizing: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../imagenslista/logozinha.webp");
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: right top;
+}   
+</style>
+    <script>
+        // Função para verificar lucro ou prejuízo
+        function verificarLucroOuPrejuizo(custo, venda) {
+            if (venda > custo) {
+                return "Lucro";
+            } else if (venda < custo) {
+                return "Prejuízo";
+            } else {
+                return "Empate";
+            }
+        }
+
+        // Função para calcular as médias
+        function calcularMedias() {
+            var somaCusto = 0;
+            var somaVenda = 0;
+
+            // Loop para somar os custos e vendas
+            for (let i = 1; i <= 40; i++) {
+                let custo = Number.parseFloat(prompt("Digite o preço de custo do produto " + i + ":"));
+                let venda = Number.parseFloat(prompt("Digite o preço de venda do produto " + i + ":"));
+
+                somaCusto += custo;
+                somaVenda += venda;
+            }
+
+            // Calcula as médias
+            var mediaCusto = somaCusto / 40;
+            var mediaVenda = somaVenda / 40;
+
+            // Exibe as médias
+            window.alert("Média de preço de custo: " + mediaCusto + "\nMédia de preço de venda: " + mediaVenda);
+        }
+
+        // Função para encontrar o maior valor
+        function valorMaior() {
+            var n1 = Number.parseFloat(document.getElementById("n1").value);
+
+            // Verifica se o valor é válido
+            if (isNaN(n1)) {
+                window.alert("Por favor, digite um número válido.");
+                return;
+            }
+
+            // Supõe que o primeiro valor é o maior
+            var maior = n1;
+
+            // Loop para verificar os outros valores
+            for (let i = 2; i <= 40; i++) {
+                var n = Number.parseFloat(prompt("Digite o " + i + "º número:"));
+
+                // Verifica se o valor é maior que o maior atual
+                if (n > maior) {
+                    maior = n;
+                }
+            }
+
+            // Exibe o maior valor
+            document.getElementById("n2").innerHTML = "O maior valor é: " + maior;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="n1" size="5">
+    <input type="button" value="valor" onclick="valorMaior()">
+    <br>
+    <p id="n2"><i>Informação</i></p>
+    <br>
+    <input type="button" value="calcular médias" onclick="calcularMedias()">
+    <P Curso: Análise e Desenvolvimento de Sistemas. <br/>
+    Turma: OADSDM1A-RCT002-20241 <br/>
+    Curso: Analise e Desenvolvimento de Sistemas <br/>
+    Aluno: Matheus Benedito. <br/>
+    </p>
+        <form action="ex00.html">
+            <input type="submit" value="Retornar ao menu"/>
+        </form>
+</body>
+</html>

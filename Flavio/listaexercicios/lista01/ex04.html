@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex04</title>
+</head>
+<style>
+    * {
+        margin:0;
+        padding: 0;
+        box-sizing: 0;
+    }
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-image: url("../imagenslista/logozinha.webp");
+        background-size: 25%;
+        background-repeat: no-repeat;
+        background-position: right top;
+    }   
+</style>
+<body>
+    <script>
+        var nome = prompt("Digite seu nome");
+        var sfixo = Number(prompt("Qual seu salário fixo?"));
+        var vend = Number(prompt("Quanto que ficou as suas vendas no mês em R$?"));
+        var comis = (vend / 100)*15;
+        var smes = (comis + sfixo);
+        document.write("Seu nome é: ",nome,"<br>");
+        document.write("Seu salário fixo é de: ",sfixo,"<br>");
+        document.write("Sua comissão é de: ",comis,"<br>");
+        document.write("Seu salário no final do mês é de: ",smes,"<br>");
+    </script>
+<P Curso: Análise e Desenvolvimento de Sistemas. <br/>
+Turma: OADSDM1A-RCT002-20241 <br/>,
+Curso: Analise e Desenvolvimento de Sistemas <br/>
+Aluno: Matheus Benedito. <br/>
+</p>
+    <form action="ex00.html">
+        <input type="submit" value="Retornar ao menu"/>
+    </form>
+</body>
+</html>

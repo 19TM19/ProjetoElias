@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>ex21</title>
+    <style>
+        * {
+    margin:0;
+    padding: 0;
+    box-sizing: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../imagenslista/logozinha.webp");
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: right top;
+}   
+</style>
+</head>
+<body>
+    <h2>Aptidão para Serviço Militar</h2>
+
+
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome"><br><br>
+
+
+    <label for="idade">Idade:</label>
+    <input type="number" id="idade"><br><br>
+
+
+    <label for="sexo">Sexo:</label>
+    <select id="sexo">
+        <option value="M">Masculino</option>
+        <option value="F">Feminino</option>
+    </select>
+    <button onclick="mudarSexo()">Mudar Sexo</button><br><br>
+
+
+    <button onclick="verificarAptidao()">Verificar Aptidão</button><br><br>
+
+
+    <p id="resultado"></p>
+
+
+    <script>
+        var pessoas = [];
+
+
+        function verificarAptidao() {
+            var nome = document.getElementById('nome').value.trim();
+            var idade = parseInt(document.getElementById('idade').value.trim());
+            var sexo = document.getElementById('sexo').value;
+
+
+            if (idade >= 17) {
+                pessoas.push({ nome: nome, idade: idade, sexo: sexo });
+                document.getElementById('resultado').innerHTML = 'Está apto a servir. <br>';
+            } else {
+                document.getElementById('resultado').innerHTML = ' Não pode servir. <br>';
+            }
+        }
+
+
+        function mudarSexo() {
+            var selectSexo = document.getElementById('sexo');
+            var sexoSelecionado = selectSexo.value;
+
+
+            if (sexoSelecionado === 'M') {
+                selectSexo.value = 'F';
+            } else {
+                selectSexo.value = 'M';
+            }
+        }
+    </script>
+<P Curso: Análise e Desenvolvimento de Sistemas. <br/>
+Turma: OADSDM1A-RCT002-20241 <br/>
+Curso: Analise e Desenvolvimento de Sistemas <br/>
+Aluno: Matheus Benedito. <br/>
+</p>
+    <form action="ex00.html">
+        <input type="submit" value="Retornar ao menu"/>
+    </form>
+</body>
+</html>
+

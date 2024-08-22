@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex05</title>
+</head>
+<style>
+    * {
+        margin:0;
+        padding: 0;
+        box-sizing: 0;
+    }
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-image: url("../imagenslista/logozinha.webp");
+        background-size: 25%;
+        background-repeat: no-repeat;
+        background-position: right top;
+    }   
+</style>
+<body>
+    <script>
+        var nome=prompt("Digite o nome do aluno");
+        var nt1=Number(prompt("Digite a nota 01"));
+        var nt2=Number(prompt("Digite a nota 02"));
+        var nt3=Number(prompt("Digite a nota 03"));
+        var med= ((nt1 + nt2 + nt3)/3).toFixed(2);
+        document.write("O aluno: ",nome ,"<br>");
+        document.write("Esta com a média de: ", med,);
+    </script>
+<P Curso: Análise e Desenvolvimento de Sistemas. <br/>
+Turma: OADSDM1A-RCT002-20241 <br/>
+Curso: Analise e Desenvolvimento de Sistemas <br/>
+Aluno: Matheus Benedito. <br/>
+</p>
+    <form action="ex00.html">
+        <input type="submit" value="Retornar ao menu"/>
+    </form>
+</body>
+</html>

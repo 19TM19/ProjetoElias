@@ -1,0 +1,195 @@
+body{
+    /*background: linear-gradient(45deg, rgb(243, 118, 15),rgba(22, 116, 224, 0.842),rgba(243, 118, 15));*/
+    background: linear-gradient(45deg, rgb(0, 0, 0),rgba(5, 35, 70, 0.842),rgb(0, 0, 0));
+    font: normal 15pt Arial;
+}
+header{
+    color: white;
+    text-align: center;
+}
+section{
+    /*background: linear-gradient(45deg, rgb(22, 116, 224, 0.842),rgba(243, 118, 15),rgba(22, 116, 224, 0.842));*/
+    background: linear-gradient(45deg, rgb(5, 35, 70, 0.842),rgb(0, 0, 0),rgba(5, 35, 70, 0.842));
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.432);
+    color:white
+}
+div {
+    text-align: center;
+    padding: 5px;
+}
+#lista02{
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+}
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+#csscomlogo{
+    font: normal 15pt Times New Roman;
+}
+#btn{
+    background: linear-gradient(45deg, rgb(243, 118, 15),rgba(22, 116, 224, 0.842));
+    border: 1;
+    border-radius: 7px;
+    height: 25px;
+    font-size: 14px;
+}
+#EX01Numero{
+    width: 56px;
+    background: linear-gradient(45deg, rgb(22,116,224,0.842), rgb(243, 118, 15));
+    text-align: center;
+}
+#EX02Numero1{
+    width: 56px;
+    background: linear-gradient(45deg, rgb(22,116,224,0.842), rgb(243, 118, 15));
+    text-align: center;
+    
+}
+#EX02Numero2{
+    width: 56px;
+    background: linear-gradient(45deg, rgb(22,116,224,0.842), rgb(243, 118, 15));
+    text-align: center;
+}
+#EX03Numero{
+    width: 56px;
+    background: linear-gradient(45deg, rgb(22,116,224,0.842), rgb(243, 118, 15));
+    text-align: center;
+}
+#EX04Numero{
+    width: 56px;
+    background: linear-gradient(45deg, rgb(22,116,224,0.842), rgb(243, 118, 15));
+    text-align: center;
+}
+#EX05Numero{
+    width: 56px;
+    background: linear-gradient(45deg, rgb(22,116,224,0.842), rgb(243, 118, 15));
+    text-align: center;
+}
+#EX05Numero2{
+    width: 56px;
+    background: linear-gradient(45deg, rgb(22,116,224,0.842), rgb(243, 118, 15));
+    text-align: center;
+}
+#EX06Numero{
+    width: 56px;
+    background: linear-gradient(45deg, rgb(22,116,224,0.842), rgb(243, 118, 15));
+    text-align: center;
+}
+#idade{
+    width: 56px;
+    background: linear-gradient(45deg, rgb(22,116,224,0.842), rgb(243, 118, 15));
+    text-align: center;
+}
+#EX08Numero{
+    width: 56px;
+    background: linear-gradient(45deg, rgb(22,116,224,0.842), rgb(243, 118, 15));
+    text-align: center;
+}
+#EX09Numero1{
+    width: 56px;
+    background: linear-gradient(45deg, rgb(22,116,224,0.842), rgb(243, 118, 15));
+    text-align: center;
+}
+#EX09Numero2{
+    width: 56px;
+    background: linear-gradient(45deg, rgb(22,116,224,0.842), rgb(243, 118, 15));
+    text-align: center;
+}
+#EX09Simb{
+    width: 56px;
+    background: linear-gradient(45deg, rgb(22,116,224,0.842), rgb(243, 118, 15));
+    text-align: center;
+}
+#EX07Idade{
+    width: 56px;
+    background: linear-gradient(45deg, rgb(22,116,224,0.842), rgb(243, 118, 15));
+    text-align: center;
+}
+#EX07Nomes{
+    width: 56px;
+    background: linear-gradient(45deg, rgb(22,116,224,0.842), rgb(243, 118, 15));
+    text-align: center;
+}
+#Tri1{
+    width: 56px;
+    background: linear-gradient(45deg, rgb(22,116,224,0.842), rgb(243, 118, 15));
+    text-align: center;
+}
+#Tri2{
+    width: 56px;
+    background: linear-gradient(45deg, rgb(22,116,224,0.842), rgb(243, 118, 15));
+    text-align: center;
+}
+#Tri3{
+    width: 56px;
+    background: linear-gradient(45deg, rgb(22,116,224,0.842), rgb(243, 118, 15));
+    text-align: center;
+}
+#txthora{
+    width: 56px;
+    background: linear-gradient(45deg, rgb(22,116,224,0.842), rgb(243, 118, 15));
+    text-align: center;
+}
+#EX36txthora{
+    width: 56px;
+    background: linear-gradient(45deg, rgb(22,116,224,0.842), rgb(243, 118, 15));
+    text-align: center;
+}
+#EX31Numero1{
+    width: 56px;
+    background: linear-gradient(45deg, rgb(22,116,224,0.842), rgb(243, 118, 15));
+    text-align: center;
+}
+#EX31Numero2{
+    width: 56px;
+    background: linear-gradient(45deg, rgb(22,116,224,0.842), rgb(243, 118, 15));
+    text-align: center;
+}
+#EX31Numero3{
+    width: 56px;
+    background: linear-gradient(45deg, rgb(22,116,224,0.842), rgb(243, 118, 15));
+    text-align: center;
+}
+#EX35Numero{
+    width: 56px;
+    background: linear-gradient(45deg, rgb(22,116,224,0.842), rgb(243, 118, 15));
+    text-align: center;
+}
+#EX37Numero1{
+    width: 56px;
+    background: linear-gradient(45deg, rgb(22,116,224,0.842), rgb(243, 118, 15));
+    text-align: center;
+}
+#EX37Numero2{
+    width: 56px;
+    background: linear-gradient(45deg, rgb(22,116,224,0.842), rgb(243, 118, 15));
+    text-align: center;
+}
+#EX05Nome {
+    background: linear-gradient(45deg, rgb(22,116,224,0.842), rgb(243, 118, 15));
+    text-align: center;
+}
+#EX30Nome {
+    background: linear-gradient(45deg, rgb(22,116,224,0.842), rgb(243, 118, 15));
+    text-align: center;
+}
+#EX30Idade{
+    width: 56px;
+    background: linear-gradient(45deg, rgb(22,116,224,0.842), rgb(243, 118, 15));
+    text-align: center;
+}
+#EX30Sal{
+    width: 56px;
+    background: linear-gradient(45deg, rgb(22,116,224,0.842), rgb(243, 118, 15));
+    text-align: center;
+}
+#EX37Nome{
+    background: linear-gradient(45deg, rgb(22,116,224,0.842), rgb(243, 118, 15));
+    text-align: center;
+}

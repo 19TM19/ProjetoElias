@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ex17</title>
+    <style>
+        * {
+    margin:0;
+    padding: 0;
+    box-sizing: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../imagenslista/logozinha.webp");
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: right top;
+}   
+</style>
+    <script>
+        function verificarNumeros() {
+            var numeros = document.getElementById("numeros").value;
+            var contador = 0;
+
+
+            for (var i = 0; i < 80; i++) {
+                var numero = parseInt(numeros[i]);
+                if (!isNaN(numero) && numero >= 10 && numero <= 150) {
+                    contador++;
+                }
+            }
+
+
+            var resultado = document.getElementById("resultado");
+            resultado.innerHTML = "Dos 80 números, " + contador + " estão entre 10 e 150.";
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="numeros" placeholder="Digite os números">
+    <br>
+    <button onclick="verificarNumeros()">Verificar</button>
+    <p id="resultado"></p>
+    <P Curso: Análise e Desenvolvimento de Sistemas. <br/>
+    Turma: OADSDM1A-RCT002-20241 <br/>
+    Curso: Analise e Desenvolvimento de Sistemas <br/>
+    Aluno: Matheus Benedito. <br/>
+    </p>
+        <form action="ex00.html">
+            <input type="submit" value="Retornar ao menu"/>
+        </form>
+</body>
+</html>

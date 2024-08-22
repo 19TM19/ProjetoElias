@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex06</title>
+    Primeira numero:<input id="numero1" type="number"> <br />
+    Segundo  numero:<input id="numero2" type="number"> <br />
+    <button onclick="inverte()">Inverter</button>
+ 
+    <script type="text/javascript">
+ 
+     function inverte(){
+      var num1 = parseFloat(document.getElementById("numero1").value);
+      var num2 = parseFloat(document.getElementById("numero2").value);
+ 
+      var aux = num1;
+ 
+      num1=num2;
+      num2=aux;
+ 
+      alert("Antes:\n"+
+         "numero1="+document.getElementById("numero1").value+"\n"+
+         "numero2="+document.getElementById("numero2").value+"\n\n"+
+         "Invertido:\n"+
+         "numero1="+num1+"\n"+
+         "numero2="+num2+"\n\n");
+     }
+  </script>
+</head>
+<style>
+    * {
+        margin:0;
+        padding: 0;
+        box-sizing: 0;
+    }
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-image: url("../imagenslista/logozinha.webp");
+        background-size: 25%;
+        background-repeat: no-repeat;
+        background-position: right top;
+    }   
+</style>
+<body>
+    <P Curso: Análise e Desenvolvimento de Sistemas. <br/>
+    Turma: OADSDM1A-RCT002-20241 <br/>
+    Curso: Analise e Desenvolvimento de Sistemas <br/>
+    Aluno: Matheus Benedito. <br/>
+    </p>
+        <form action="ex00.html">
+            <input type="submit" value="Retornar ao menu"/>
+        </form>
+</body>
+</html>

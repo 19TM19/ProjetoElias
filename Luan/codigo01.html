@@ -1,0 +1,14 @@
+<body>
+    <hl>Abrir e Fechar Aba</hl>
+    <button onclick="abrirAba()">Abrir Aba</button>
+    <button onclick="fecharAba()">Fechar Aba</button>
+    <script>
+        let minhaAba;
+        function abrirAba() {
+            minhaAba = window.open('https://www.twitch.tv/thematheus19_', '_blank');
+        }
+        function fecharAba() {
+            minhaAba.close();
+        }
+    </script>
+</body>

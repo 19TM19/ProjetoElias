@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>ex15</title>
+    <style>
+        * {
+    margin:0;
+    padding: 0;
+    box-sizing: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../imagenslista/logozinha.webp");
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: right top;
+}   
+</style>
+    <script>
+        function verificarNumero() {
+            var numero = parseInt(document.getElementById("numero").value);
+            var resultado = document.getElementById("resultado");
+
+
+            if (numero >= 100 && numero <= 200) {
+                resultado.innerHTML = "O número " + numero + " está entre 100 e 200.";
+            } else {
+                resultado.innerHTML = "O número " + numero + " não está entre 100 e 200.";
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="numero" placeholder="Digite um número">
+    <button onclick="verificarNumero()">Verificar</button>
+    <p id="resultado"></p>
+    <P Curso: Análise e Desenvolvimento de Sistemas. <br/>
+    Turma: OADSDM1A-RCT002-20241 <br/>
+    Curso: Analise e Desenvolvimento de Sistemas <br/>
+    Aluno: Matheus Benedito. <br/>
+    </p>
+        <form action="ex00.html">
+            <input type="submit" value="Retornar ao menu"/>
+        </form>
+</body>
+</html>

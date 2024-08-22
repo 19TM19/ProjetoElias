@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex10</title>
+    <style>
+        * {
+    margin:0;
+    padding: 0;
+    box-sizing: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../imagenslista/logozinha.webp");
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: right top;
+}   
+</style>
+    <script>
+        function calcular() {
+            var valorTotal = parseFloat(document.getElementById("numero1").value);
+            var numeroParcelas = parseInt(document.getElementById("numero2").value);
+            var resultado;
+
+
+
+
+            if (numeroParcelas > 5) {
+                alert("O número máximo de parcelas é 5.");
+                return;
+            }
+
+
+
+
+            if (numeroParcelas <= 0) {
+                alert("O número de parcelas deve ser maior que zero.");
+                return;
+            }
+
+
+
+
+            resultado = valorTotal / numeroParcelas;
+            document.getElementById("resultado").textContent = resultado.toFixed(2);
+        }
+    </script>
+</head>
+<body>
+    <label for="numero1">Digite o valor total:</label>
+    <input type="number" id="numero1" name="numero1">
+
+
+
+
+    <label for="numero2">Digite o número de parcelas (máx. 5):</label>
+    <input type="number" id="numero2" name="numero2" min="1" max="5">
+
+
+
+
+    <button onclick="calcular()">Calcular</button>
+
+
+
+
+    <div>O valor de cada parcela é: R$<span id="resultado"></span></div>
+</body>
+<body>
+    <P Curso: Análise e Desenvolvimento de Sistemas. <br/>
+    Turma: OADSDM1A-RCT002-20241 <br/>
+    Curso: Analise e Desenvolvimento de Sistemas <br/>
+    Aluno: Matheus Benedito. <br/>
+    </p>
+        <form action="ex00.html">
+            <input type="submit" value="Retornar ao menu"/>
+        </form>   
+</body>
+</html>

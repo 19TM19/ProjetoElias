@@ -1,0 +1,59 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex10</title>
+    <style>
+        * {
+    margin:0;
+    padding: 0;
+    box-sizing: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../imagenslista/logozinha.webp");
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: right top;
+}   
+</style>
+    <script>
+        function Carango(){
+            var valorcarro = parseFloat(document.getElementById("valcar").value);    
+            var ano = parseFloat(document.getElementById("ano").value);
+            var display = document.getElementById("display");
+            var carroF;
+
+
+            if (ano < 2000){
+                var ano1 = (12 / 100) * valorcarro;
+                carroF = valorcarro - ano1;
+            } else {
+                var ano1 = (7 / 100) * valorcarro;
+                carroF = valorcarro - ano1;
+            }
+
+
+            var mensagem = "Valor final da venda: " + carroF.toFixed(2);
+            display.innerHTML = mensagem;              
+        }
+    </script>
+</head>
+<body>
+    <p>Digite o valor do carro:</p>
+    <input type="text" id="valcar" size="5"/><br/>
+    <p>Digite o ano do carro:</p>
+    <input type="text" id="ano" size="5"/><br/>
+    <input type="submit" value="Mostrar" onclick="Carango()"/>
+    <br/><p id="display"><i>Valor final da venda</i></p>
+    <P Curso: Análise e Desenvolvimento de Sistemas. <br/>
+    Turma: OADSDM1A-RCT002-20241 <br/>
+    Curso: Analise e Desenvolvimento de Sistemas <br/>
+    Aluno: Matheus Benedito. <br/>
+    </p>
+        <form action="ex00.html">
+            <input type="submit" value="Retornar ao menu"/>
+        </form>
+</body>
+</html>

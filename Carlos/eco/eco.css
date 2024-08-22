@@ -1,0 +1,54 @@
+body{
+    background: linear-gradient(45deg,rgba(5, 35, 70, 0.842),rgb(128, 128, 0),rgba(5, 35, 70, 0.842),rgb(3, 187, 133),rgba(5, 35, 70, 0.842));
+    background-size: 400% 400%;
+    color: white;
+    text-align: center;
+    animation: colors 5s ease infinite;
+}
+#bytm{
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background: linear-gradient(45deg,rgba(5, 35, 70, 0.842),rgb(128, 128, 0),rgba(5, 35, 70, 0.842),rgb(3, 187, 133),rgba(5, 35, 70, 0.842));
+}
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+#IMGS {
+    border-radius: 10px;
+}
+#PIKA {
+    margin: 0 auto;
+}
+#esquerda01 {
+    float: left;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px;
+    width: 47%;
+    margin: auto;
+    box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.432);
+    background: linear-gradient(75deg,rgba(5, 35, 70, 0.842),rgba(128, 128, 0),rgb(3, 187, 133),rgba(5, 35, 70, 0.842));
+    color: white;
+}
+#direita01 {
+    float: right;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px;
+    width: 47%;
+    margin: auto;
+    box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.432);
+    background: linear-gradient(280deg,rgba(5, 35, 70, 0.842),rgb(128, 128, 0),rgb(3, 187, 133),rgba(5, 35, 70, 0.842));
+    color: white;
+}

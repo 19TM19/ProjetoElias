@@ -1,0 +1,58 @@
+<html>
+<head>
+    <title>ex19</title>
+    <style>
+        * {
+    margin:0;
+    padding: 0;
+    box-sizing: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../imagenslista/logozinha.webp");
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: right top;
+}   
+</style>
+    <script>
+        function contarPessoas() {
+            var totalHomens = 0;
+            var totalMulheres = 0;
+
+
+            for (var i = 1; i <= 56; i++) {
+                var nome = prompt("Digite o nome da pessoa " + i + ":");
+                var sexo = prompt("Digite o sexo da pessoa " + i + " (H para homem, M para mulher):");
+
+
+                if (sexo.toUpperCase() === 'H') {
+                    totalHomens++;
+                    alert(nome + " é homem.");
+                } else if (sexo.toUpperCase() === 'M') {
+                    totalMulheres++;
+                    alert(nome + " é mulher.");
+                } else {
+                    alert("Sexo inválido! Por favor, digite H para homem ou M para mulher.");
+                    i--;
+                }
+            }
+
+
+            alert("Total de homens: " + totalHomens + "\nTotal de mulheres: " + totalMulheres);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="contarPessoas()">Iniciar Contagem</button>
+    <P Curso: Análise e Desenvolvimento de Sistemas. <br/>
+    Turma: OADSDM1A-RCT002-20241 <br/>
+    Curso: Analise e Desenvolvimento de Sistemas <br/>
+    Aluno: Matheus Benedito. <br/>
+    </p>
+        <form action="ex00.html">
+            <input type="submit" value="Retornar ao menu"/>
+        </form>
+</body>
+</html>

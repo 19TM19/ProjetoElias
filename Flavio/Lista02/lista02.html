@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Exercicio 02</title>
+        <link rel="stylesheet" href="lista02.css">
+        <script src="lista.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="lista02">Lista de Exercício 02</h1>
+    </header>
+    <section>
+        <div id="csscomlogo">
+            <img src="./logo iesb.jfif" width="100" height="100" />
+            <p>
+            Curso: Análise e Desenvolvimento de Sistemas. </br>
+            Turma:OADSDM1A-RCT002</br> 
+            Aluno: Matheus Benedito Caminha Lima.</br>
+            </p>
+            <hr>
+        </div>
+        <div id="EX01">
+            <h1>Exercício 24.</h1>
+            <p>
+                Insira um número abaixo para sabermos se é positivo, negativo ou zero:<br/>
+                <p></p>
+                <input type="number" id="EX01Numero" ><br/>
+                <input type ="button" id="btn" value="Verificar" onclick="EX01CALC()">
+            </p>
+            <p id="EX01res">Resultado</p>
+        </div>
+        <hr>
+        <div id="EX02">
+            <h1>Exercício 25.</h1>
+            <p>
+                Digite 2 valores, e iremos falar qual é o maior ou se são iguais <br/>
+                <input type="number" id="EX02Numero1">
+                <input type="number" id="EX02Numero2"><br/>
+                <input type="button" id="btn" value="Verificar" onclick="EX02CALC()">
+                <p id="EX02res">Resultado</p>
+            </p>
+        </div>
+        <hr>
+        <div id="EX03">
+            <p>
+                <h1>Exercício 26.</h1>
+                Digite um número entre 1 e 5 e irei informar como se escreve ele<br/>
+                <input type="number" id="EX03Numero"><br/>
+                <input type="button" id="btn" value="Verificar" onclick="EX03CALC()">
+                <p id="EX03res">Resultado</p>
+            </p>
+        </div>
+        <hr>
+        <div id="EX04">
+            <p>
+                <h1>Exercício 27.</h1>
+                Digite o valor do carro que desejas comprar e informe o tipo de combustível, e iremos informar seu desconto.<br/>
+                <input type="number" id="EX04Numero"><br/>
+                <input type="radio" name="EX04combustivel" id="EX04Al" checked>
+                <label for="EX04Al">Álcool</label>
+                <input type="radio" name="EX04combustivel" id="EX04Gas">
+                <label for="EX04Gas">Gasolina</label>
+                <input type="radio" name="EX04combustivel" id="EX04die">
+                <label for="EX04die">Diesel</label><br/>
+                <input type="button" id="btn" value="Verificar" onclick="EX04CALC()">
+                <p id="EX04res">Resultado</p>
+            </p>
+        </div>
+        <hr>
+        <div id="EX05">
+            <p>
+                <h1>Exercício 28.</h1>
+                Digite seu nome completo:
+                <input type="text" id="EX05Nome"><br/>
+                Quantos salários minímos vc ganha?<br/>
+                <input type="radio" name="EX05salario" id="EX051a2" checked>
+                <label for="EX051a2">1 a 2</label>
+                <input type="radio" name="EX05salario" id="EX053a10">
+                <label for="EX053a10">3 a 10</label>    
+                <input type="radio" name="EX05salario" id="EX0511a20">
+                <label for="EX0511a20">11 a 20</label>
+                <input type="radio" name="EX05salario" id="EX0521">
+                <label for="EX0521">21+</label><br/>
+                Qual o valor do seu salário?<br/>
+                <input type="number" id="EX05Numero2"><br/>
+                <input type="button" id="btn" value="Verificar" onclick="EX05CALC()"><br/>
+                <p id="EX05res">Resultado</p>
+            </p>
+        </div>
+        <hr>
+        <div ip="EX06">
+            <p>
+                <h1>Exercício 29.</h1>
+                Digite o número do mês:<br/>
+                <input type="number" id="EX06Numero"><br/>
+                <input type="button" id="btn" value="Verificar" onclick="EX06CALC()">
+                <p id="EX06res">Resultado</p>
+            </p>
+        </div>
+        <hr>
+        <div>
+            <h1>Exercício 30.</h1>
+            Digite seu nome:<br/>
+            <input type="text" id="EX30Nome"><br/>
+            Digite sua Idade:<br/>
+            <input type="number" id="EX30Idade"><br/>
+            Digite seu salário:<br/>
+            <input type="number" id="EX30Sal"><br/>
+            Sexo:
+            <input type="radio" name="EX30Sex" id="EX30Mas" checked>
+            <label for="EX30Sex">Masculino</label>
+            <input type="radio" name="EX30Sex" id="EX30Fem">
+            <label for="EX30Sex">Feminino</label><br/>
+            <input type="button" id="btn" value="Verificar" onclick="EX30CALC()">
+            <p id="EX30res">Resultado</p>
+        </div>
+        <hr>
+        <div>
+            <p>
+                <h1>Exercicio 31.</h1>
+                Informe 3 Valores diferentes:<br/>
+                <input type="number" id="EX31Numero1"> <br/>
+                <input type="number" id="EX31Numero2"> <br/>
+                <input type="number" id="EX31Numero3"> <br/>
+                <input type="button" id="btn" value="Verificar" onclick="EX31CALC()"> <br/>
+                <p id="EX31res">Resultado</p>
+            </p>
+        </div>
+        <hr>
+        <div id="EX09">
+            <p>
+                <h1>Exercício 32.</h1>
+                Informe 2 valores:<br/>
+                <input type="number" id="EX09Numero1">
+                <input type="number" id="EX09Numero2"><br/>
+                Digite a expressão<br/>
+                <center>
+                <table>
+                    <tr>
+                        <td>+</td><td>-</td><td>/</td><td>*</td>
+                    </tr>
+                </table>
+                </center>
+                <input type="caractere" id="EX09Simb"><br/>
+                <input type="button" id="btn" value="Verificar" onclick="EX09CALC()">
+                <p id="EX09res">Resultado</p>
+            </p>
+        </div>
+        <hr>
+        <div id="EX10">
+            <p>
+                <h1>Exercício 33.</h1>
+                Digite o valor dos 3 lados do triângulo:<br/>
+                Valor 01:
+                <input type="number" id="Tri1" name="Tri1"><br/>
+                Valor 02:
+                <input type="number" id="Tri2" name="Tri2"><br/>
+                Valor 03:
+                <input type="number" id="Tri3" name="Tri3"><br/>
+                <button type="button" id="btn" onclick="ladosTriangulo() ">Verificar</button>
+                <p id="top">Resultado</p>
+            </p>
+        </div>        
+        <hr>
+        <div>
+            <p><h1>Exercício 34.</h1>
+                Quantas horas/aulas por mês você trabalha:
+                <input type="number" name="txthora" id="txthora" min="0">
+            </p>
+            <p>Níveis do salário por hora
+                <input type="radio" name="radsex" value="12" id="12hrs" checked>
+                <label for="Nivel 01">12,00 por hora</label>
+                <input type="radio" name="radsex" value="17" id="17hrs">
+                <label for="Nivel 02">17,00 por hora</label>
+                <input type="radio" name="radsex" value="25" id="25hrs">
+                <label for="Nivel03">25,00 por hora</label>
+            </p>
+            <p>
+                <input type ="button" id="btn" value="Verificar" onclick="verificar()">
+            </p>
+        <p id="resp">Resultado</p>
+        </div>
+        <hr>
+        <div>
+            <p>
+                <h1>Exercício 35.</h1>
+                Digite a sua idade:<br/>
+                <input type="number" id="EX35Numero"><br/>
+                Vamos ver seu nível de nadador<br/>
+                <input type="button" id="btn" value="Verificar" onclick="EX35CALC()">
+                <p id="EX35res">Resultado</p>
+            </p>
+        </div>
+        <hr>
+        <div>
+            <p>
+                <h1>Exercício 36.</h1>
+                <p> Quantos kw/h você usou?
+                    <input type="number" name="36txthora" id="EX36txthora" min="0"><br/>
+                    Você esta em uma:<br/>
+                    <input type="radio" name="36radsex" value="0.60" id="12hrs" checked>
+                    <label for="Residência"> Residência</label>
+                    <input type="radio" name="36radsex" value="0.48" id="17hrs">
+                    <label for="Comércio">Comércio</label>
+                    <input type="radio" name="36radsex" value="1.29" id="25hrs">
+                    <label for="Indústria">Indústria</label><br/>
+                    <input type ="button" id="btn" value="Verificar" onclick="EX36verificar()">
+                </p>
+            
+            <p id="EX36resp" >Resposta</p>
+        </div>
+        <hr>
+        <div>
+            <p>
+                <h1>Exercício 37.</h1>
+                Digite seu nome:<br/>
+                <input type="text" id="EX37Nome"><br/>
+                Sexo:<br/>
+                <input type="radio" name="EX37Sex" checked>
+                <label for="EX37Sex">Masculino</label>
+                <input type="radio" name="EX37Sex">
+                <label for="EX37Sex">Feminino</label><br/> 
+                Informe sua altura:<br/>
+                <input type="number" id="EX37Numero1"><br/>
+                Informe a sua idade:<br/>
+                <input type="number" id="EX37Numero2"><br/>
+                <input type="button" id="btn" value="Verificar" onclick="EX37CALC()">
+                <p id="EX37resp">Resultado</p> 
+            </p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy;By-TM19_</p>
+    </footer>
+</body>
+</html>
