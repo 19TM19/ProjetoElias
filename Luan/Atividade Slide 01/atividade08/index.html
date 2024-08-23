@@ -4,16 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade 08</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Atividade08</title>
 </head>
 <body>
-    <h1>Atividade 08</h1><br/>
+    <h1>Gerenciador de Lista</h1>
     <input type="text" id="itemInput" placeholder="Adicionar novo item">
     <input type="button" id="addBtn" value="Adicionar"><br/><br/>
     <ul id="itemList">Lista de itens:</ul><br/><br/>
-    <input type="button" id="removeBtn" value="Remover Selecionados">
-   
-    <script src="index.js"></script>
+    <input type="button" id="removeBtn" value="Remover Todos">
+
+    <script>
+        function addItem() {
+            const itemInput = document.getElementById('itemInput');
+            const itemList = document.getElementById('itemList');
+            const itemText = itemInput.value.trim();
+
+            if (itemText !== "") {
+               
+                const listItem = document.createElement('li');
+                listItem.textContent = itemText;
+
+            
+                itemList.appendChild(listItem);
+
+                
+                itemInput.value = "";
+            } else {
+                alert('Insira um item.');
+            }
+        }
+
+        function removeAllItems() {
+            const itemList = document.getElementById('itemList');
+            itemList.innerHTML = ""; 
+        }
+        document.getElementById('addBtn').addEventListener('click', addItem);
+        document.getElementById('removeBtn').addEventListener('click', removeAllItems);
+    </script>
 </body>
 </html>
